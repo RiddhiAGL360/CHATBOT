@@ -10,7 +10,9 @@ const app = express();
 app.use(cors({
     origin: [
   'https://dakshagl.github.io',         // old allowed frontend
-  'https://riddhiagl360.github.io'       // your new frontend domain
+  'https://riddhiagl360.github.io'  ,
+        'http://35.207.249.139:3000'
+        // your new frontend domain
 ], // Allow requests from GitHub Pages
     methods: 'GET,POST', // Allow GET and POST methods
     allowedHeaders: 'Content-Type,Authorization', // Allow specific headers
